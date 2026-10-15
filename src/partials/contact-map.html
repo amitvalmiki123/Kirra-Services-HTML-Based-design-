@@ -1,0 +1,54 @@
+
+<!-- ================= GET IN TOUCH ================= -->
+<section class="sec light touch" id="contact" aria-labelledby="h-contact">
+  <img class="touch__art" src="images/art/corner-blue.png" alt="" aria-hidden="true" loading="lazy">
+  <div class="wrap touch__grid">
+    <div class="rv">
+      <p class="kick">Get in touch</p>
+      <h2 id="h-contact">{{CONTACT_H}}</h2>
+      <p style="font-size:1.08rem">{{CONTACT_P}}</p>
+      <ul class="clist">
+        <li><svg aria-hidden="true"><use href="#i-phone"/></svg><div><b>Phone</b><a href="tel:+61261966999">+61 2 6196 6999</a></div></li>
+        <li><svg aria-hidden="true"><use href="#i-mail"/></svg><div><b>Email</b><a href="mailto:info@kirraservices.com.au">info@kirraservices.com.au</a></div></li>
+        <li><svg aria-hidden="true"><use href="#i-pin"/></svg><div><b>Head office</b><span>1/19 Barry Drive, Turner ACT 2612</span></div></li>
+      </ul>
+    </div>
+    <div class="form-card rv">
+      <form data-form novalidate>
+        <p class="ft">Send us a <em>message</em></p>
+        <div class="row2">
+          <div class="field"><label for="cf-name">Full name</label><input id="cf-name" name="name" type="text" autocomplete="name" required></div>
+          <div class="field"><label for="cf-email">Email</label><input id="cf-email" name="email" type="email" autocomplete="email" required></div>
+        </div>
+        <div class="row2">
+          <div class="field"><label for="cf-phone">Phone</label><input id="cf-phone" name="phone" type="tel" autocomplete="tel"></div>
+          <div class="field"><label for="cf-topic">Enquiry about</label><select id="cf-topic" name="topic">{{TOPICS}}</select></div>
+        </div>
+        <div class="field"><label for="cf-office">Nearest office</label><select id="cf-office" name="office"><option>Canberra</option><option>Darwin</option><option>Melbourne</option><option>Sydney</option><option>Brisbane</option><option>Perth</option></select></div>
+        <div class="field"><label for="cf-msg">Your message</label><textarea id="cf-msg" name="message" rows="4" required></textarea></div>
+        <button class="btn btn--cta" type="submit">Send message <svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
+      </form>
+      <div class="form-ok" role="status" aria-live="polite"><svg aria-hidden="true"><use href="#i-check"/></svg><p class="ft">Message received.</p><p>Thank you, we'll reply soon. (Mockup: nothing was sent.)</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MAP (directly below Get in Touch) ================= -->
+<section class="mapsec" id="map" aria-label="Kirra Services offices map">
+  <div class="mapwrap">
+    <div class="mapcard">
+      <h2>Find your <em>nearest office</em></h2>
+      <p>Pick an office to fly the map there and see its address, or select a pin on the map.</p>
+      <div class="mchips" role="group" aria-label="Offices">
+        <button class="mchip" type="button" data-office="canberra" aria-pressed="true">Canberra</button>
+        <button class="mchip" type="button" data-office="darwin" aria-pressed="false">Darwin</button>
+        <button class="mchip" type="button" data-office="melbourne" aria-pressed="false">Melbourne</button>
+        <button class="mchip" type="button" data-office="sydney" aria-pressed="false">Sydney</button>
+        <button class="mchip" type="button" data-office="brisbane" aria-pressed="false">Brisbane</button>
+        <button class="mchip" type="button" data-office="perth" aria-pressed="false">Perth</button>
+      </div>
+      <div class="mapinfo" id="mapinfo" aria-live="polite"></div>
+    </div>
+    <div id="kirra-map" role="application" aria-label="Interactive map of Kirra Services offices"><div class="map-fallback">Loading map… If it doesn't appear, find us at 1/19 Barry Drive, Turner ACT 2612.</div></div>
+  </div>
+</section>

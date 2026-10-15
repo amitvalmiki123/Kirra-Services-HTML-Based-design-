@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en-AU" class="has-subnav">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{TITLE}}</title>
+<meta name="description" content="{{DESC}}">
+<link rel="canonical" href="https://www.kirraservices.com.au/{{CANON}}">
+<meta property="og:title" content="{{TITLE}}">
+<meta property="og:description" content="{{DESC}}">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#000000">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="{{HERO_IMG}}" fetchpriority="high">
+<link rel="stylesheet" href="css/style-light.css">
+<link rel="stylesheet" href="css/light.css">
+<link rel="stylesheet" href="css/inner.css">
+<script>document.documentElement.className += ' js';</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["Organization", "LocalBusiness"],
+      "@id": "https://www.kirraservices.com.au/#org",
+      "name": "Kirra Services",
+      "url": "https://www.kirraservices.com.au/",
+      "logo": "https://www.kirraservices.com.au/images/kirra-services-logo.png",
+      "telephone": "+61 2 6196 6999",
+      "email": "info@kirraservices.com.au",
+      "foundingDate": "2017",
+      "address": { "@type": "PostalAddress", "streetAddress": "1/19 Barry Drive", "addressLocality": "Turner", "addressRegion": "ACT", "postalCode": "2612", "addressCountry": "AU" },
+      "areaServed": { "@type": "Country", "name": "Australia" },
+      "sameAs": ["https://www.linkedin.com/company/kirraservices/", "https://www.facebook.com/kirraservices/", "https://www.youtube.com/@kirraservices/videos", "https://share.google/8JAEf5YHGorA48oR5"]
+    },
+    {
+      "@type": "{{SCHEMA_TYPE}}",
+      "@id": "https://www.kirraservices.com.au/{{CANON}}#webpage",
+      "url": "https://www.kirraservices.com.au/{{CANON}}",
+      "name": "{{TITLE}}",
+      "description": "{{DESC}}",
+      "about": { "@id": "https://www.kirraservices.com.au/#org" }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.kirraservices.com.au/" },
+        { "@type": "ListItem", "position": 2, "name": "{{CRUMB}}", "item": "https://www.kirraservices.com.au/{{CANON}}" }
+      ]
+    }{{EXTRA_SCHEMA}}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{{FAQ_SCHEMA}}
+</script>
+</head>
+<body>
